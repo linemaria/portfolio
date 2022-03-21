@@ -1,0 +1,170 @@
+@import url("https://use.typekit.net/oek0tql.css");
+
+//Variabler
+$darkColor: #202020;
+$lightColor: rgba(250,250,250,255);
+// $pink: rgb(255, 170, 139);
+// $pink: #F6E0E0;
+// $lightpink: lighten($pink, 10%);
+// $darkpink: darken($pink, 10%);
+// $blue: #D0D7E6;
+// $purple:#E2D7E8;
+// $green:#e0f0e3;
+
+// Mixins
+
+// Desktop
+@mixin desktop {
+  @media screen and (min-width: 900px){
+      @content;
+  }
+}
+
+// Mobil
+@mixin mobile {
+  @media screen and (max-width: 600px){
+      @content;
+  }
+}
+
+// Dark mode
+@mixin darkMode {
+  @media screen and (prefers-color-scheme: dark){
+      @content;
+  }
+
+}
+
+// Form på element
+@mixin imgShape($circle: false) {
+  @if $circle {
+      border-radius: 50%;
+  } @else {
+      border-radius: 20px;
+  }
+}
+
+* {
+    font-family: "poppins", sans-serif;
+    line-height: 1.8; /* radhöjd */
+    cursor: pointer; /* sätt pil till pointer hand */
+    box-sizing: border-box;
+    width: 100%;
+    @include mobile {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+  }
+
+  header{
+    padding-top: 2em;
+    @include mobile {
+  padding-top: 1em;
+  margin-bottom: 0em;
+   }
+  }
+body {
+    // background-color: $lightColor;
+    background-color: #F2F2F0;
+    color: $darkColor;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: fit-content;
+    margin: 0;
+    padding: 0;
+    @include mobile {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+    // margin-left: auto;
+    // margin-right: auto;
+    // max-width: 1300px;
+
+    //inkluderar dark mode för body
+    @include darkMode {
+      background: $darkColor;
+      color: $lightColor;
+  }
+  }
+
+  header{
+    text-align: right;
+    color: black;
+  }
+  header a{
+text-decoration: none;
+transition: all .2s ease-in-out;
+  }
+  header a:hover{
+    transform: scale(1.4);
+    @include mobile {
+      transform: none;
+   }
+ 
+  }
+  header a:visited{
+    color: black;
+  }
+  a:link, a:visited {
+    color: black;
+}
+  .link{
+    text-decoration: none;
+    @include mobile {
+      padding-right: 1.5em;
+   }
+  }
+ .link:visited{
+  a {text-decoration: none;}
+  color: black;
+}
+  .link:hover{
+    color: #f34840;
+    font-size: large;
+    text-transform: uppercase;
+    @include mobile {
+      font-size: medium;
+   }
+  }
+
+  .mainText{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+//columner,  4 spalter för design process
+
+.column {
+  float: left;
+  width: 25%;
+
+  @include mobile {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+ }
+}
+.column p{font-size: smaller;
+width: max-content;}
+
+.row{
+  @include mobile {
+   margin-top: -1em;
+   padding-left: 2em;
+   }
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 5em;
+  @include mobile {
+    margin-bottom: 3em;
+     }
+}
+
+

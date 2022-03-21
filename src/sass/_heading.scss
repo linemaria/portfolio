@@ -1,0 +1,177 @@
+//Rubriker
+h1{
+    color: $darkColor;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "poppins";
+    font-size:30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+  
+   //inkluderar styling för mobil
+    @include mobile {
+     font-size: 1.5em;
+  }
+  }
+
+  .startHead{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:140px;
+    line-height: 1em;
+    margin-bottom: 0.2em;
+    margin-left: 0.2em;
+    margin-top: 0em;
+    @include mobile {
+      margin: 0;
+      line-height: 0.8em;
+      padding-left: 0.2em;
+
+      margin-bottom: 0.3em;
+      font-size:100px;
+   }
+  }
+
+  .serifHead{
+    color: $darkColor;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+    font-size:40px;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-weight: bolder;
+  
+   //inkluderar styling för mobil
+    @include mobile {
+     font-size: 1.5em;
+  }
+  }
+  
+  h2{
+    text-align: center;
+    font-weight: normal;
+  }
+  .lefth2{
+    text-align: left;
+    font-weight: normal;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile {
+      width: 80%;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+   }
+  }
+
+  #smallH2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+  }
+  #filled{
+    color: white;
+    margin-bottom: 1em;
+  
+ 
+  }
+  #filled span{
+    background-color: black;
+    padding: 0.3em;
+
+  }
+
+  //design process rubriker
+  .process{
+  font-size: 25px;
+  font-weight: normal;
+  text-align: left;
+  @include mobile {
+    font-size: 18px;
+    margin-left: 0.5em;
+  }
+  }
+  //stora siffror
+  .workHead{
+    text-align: left;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 120px;
+    margin-left: 80px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  
+  .artHead{
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 1em;
+    margin-bottom: 0em;
+    margin-top: 1em;
+    @include mobile {
+      margin-top: 1em;
+      padding-left: 0.5em;
+      font-size: 45px;
+   }
+  }
+
+  .tabelHead{
+    
+   padding-left: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    @include mobile {
+     margin-top: 1em;
+     margin-bottom: 1em;
+      font-size: 20px;
+   }
+
+  }
+  //rosa rubrik
+  // .pinkHead{
+  //   width: 60%;
+  //   text-align: center;
+  //   background-color: $pink;
+  //   color: white;
+  //   font-family: "poppins";
+  //   padding-top: 1em;
+  //   padding-bottom: 1em;
+  //   font-size:35px;
+  //   font-weight: lighter;
+  //   letter-spacing: 4px;
+  //   @include mobile {
+  //     font-size: 1.5em;
+  //     width: 100%;
+  //  }
+  // }
+  
+  // //lila rubrik
+  // .purpleHead{
+  //   @extend .pinkHead;
+  //   background-color: $purple;
+  // }
+  
+  // //blå rubrik
+  // .blueHead{
+  //   @extend .pinkHead;
+  //   background-color: $blue;
+  // }
+
+  //   //blå rubrik
+  //   .greenHead{
+  //       @extend .pinkHead;
+  //       background-color: $green;
+  //     }

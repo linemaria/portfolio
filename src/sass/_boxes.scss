@@ -1,0 +1,192 @@
+.box1{
+    width: 100%;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.mainWidth{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainWidth{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainWidth1{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textLeft{
+    font-size: 40px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 1em;
+    margin-bottom: 2em;
+    @include mobile {
+       font-size: 30px;
+       margin-top: 2em;
+       padding-left: 1em;
+       width: 80%;
+     }
+}
+
+.overLined{
+    border-top: 1.5px solid black;
+}
+
+.overLined p { 
+
+    width: 30%;
+    @include mobile {
+        width: 60%;
+        padding-left: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+     }
+}
+.beigeBackground{
+    width: 100%;
+    background-color: #E6E7E2;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    @include mobile {
+        width: 100%;
+     }
+}
+.darkBackground{
+    margin-top: -1.5em;
+    background-color: #1A1A18;
+    padding-top: 2em;
+    color: white;
+    padding-bottom: 3em;
+  .overLined{
+    border-top: 1.5px solid white;
+  }  
+}
+.left{
+width: 47.76%;
+float: right;
+display: block;
+
+margin-right: 2.7em;
+height: 39.33em;
+
+@include mobile {
+    width: 30%;
+    font-size: 0.7em;
+    margin-right: 0.5em;
+height: fit-content;
+  }
+
+h1{
+    margin-top: 2em;
+    @include mobile {
+     padding-top: 2em;
+      }
+}
+p{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+}
+
+}
+
+
+.right{
+    width: 47.76%;
+    float: left;
+    display: block;
+    // background-color: $pink;
+    margin-left: 1.7em;
+    height: 39.33em; 
+    @include mobile {
+        width: 90%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    h1{
+        margin-top: 2em;
+        @include mobile {
+            padding-top: 2em;
+             }
+    }
+    p{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 70%;
+    }
+}
+
+// .rightBlue{
+//     @extend .right;
+//     background-color: #D0D7E6;
+// }
+
+// .rightPurple{
+//     @extend .right;
+//     background-color: #E2D7E8;
+// }
+
+// .rightGreen{
+//     @extend .right;
+//     background-color: $green;
+// }
+
+.smallBox{
+    float: left;
+    margin-left: 18em;
+    margin-top: 3em;
+     display: block;
+     width: 30%;
+}
+
+//skills
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.containerSkill {
+  width: 60%; /* Full width */
+  background-color: #1A1A18; /* Grey background */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  @include mobile {
+    width: 80%;
+
+     }
+}
+
+.skills {
+  text-align: center; /* Right-align text */
+  padding-top: 7px; /* Add top padding */
+  padding-bottom: 7px; /* Add bottom padding */
+  border-radius: 16px 0 0 16px;
+  color: black; /* White text color */
+  @include mobile {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: -1em;
+     }
+}
+
+.html {width: 80%; background-color: #f34840;} 
+.css {width: 80%; background-color: #f34840;} 
+.js {width: 65%; background-color: #f34840; } 
+.php {width: 60%; background-color: #f34840; }// rgb(95, 1, 1);}
+
+.graphic {width: 50%; background-color: #f34840;} 
+.figma {width: 50%; background-color: #f34840;} 
+.adobe {width: 80%; background-color: #f34840;} 
+.photo {width: 65%; background-color: #f34840;} 
+.ux {width: 60%; background-color: #f34840;} 

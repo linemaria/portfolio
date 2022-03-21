@@ -1,0 +1,58 @@
+
+footer{
+max-width: 1300px;
+margin-left: auto;
+margin-right: auto;
+    border-top: 1.5px solid black;
+    padding-top: 2em;
+    padding-bottom: 1em;
+
+   p{
+    color: $darkColor;
+    width: 12%;
+    margin-left: 5em;
+    @include mobile {
+        width: 30%;
+        margin-bottom: 0em;
+        margin-left: 2em;
+         }
+//inkluderar styling för dark mode
+    @include darkMode {
+        color: $lightColor;
+    }
+   }
+}
+.footer p:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 2em;
+  }
+footer i{
+    margin-top: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @include mobile {
+        margin-top: 3em;
+       font-size: 10px;
+         }
+}
+
+.icons{
+    float: right;
+    display: block;
+    margin-right: 0em;
+    width: 12%;
+    @include mobile {
+        width: 30%;
+         }
+    }
+    .icons:after {
+      content: "";
+      display: table;
+      clear: both;
+      margin-bottom: 2em;
+    }
+   

@@ -1,0 +1,252 @@
+  
+  /* logga */
+  .darkLogo {
+    width: 14em;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @include mobile {
+      width: 8em;
+   }
+  }
+  .lightLogo {
+    width: 14em;
+    margin-top: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @include mobile {
+      width: 8em;
+   }
+  }
+
+  /* bild startsida*/
+    .bigImg{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 60%;
+  }
+
+  .smallImg{
+   float: right;
+   margin-right: 2em;
+    display: block;
+    width: 40%;
+    @include mobile {
+
+   }
+}
+
+  /* bild kontaktsidan extend bigImg men gör cirkelformad */
+  .aboutImg{
+    @extend .bigImg;
+    //inkluderar styling cirkel
+    @include imgShape($circle: true);
+    width: 20%;
+}
+
+.leftImg{
+  width: 47.76%;
+  margin-left: 1.7em;
+  height: 500px;
+  float: left;
+  margin-bottom: 1em;
+  /* margin-left: 1.7em; */
+  @include mobile {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
+    height: fit-content;
+ }
+}
+
+.leftImg2{
+  width: 47.76%;
+
+  /* margin-left: 1.7em; */
+  @include mobile {
+    margin-left: 1.5em;
+    width: 60%;
+    margin-bottom: -3em;
+    margin-right: 0em;
+ }
+}
+
+.rightImg{
+  width: 47.76%;
+  float: left;
+  height: 500px;
+  margin-right: 1.7em;
+  margin-bottom: 1em;
+  @include mobile {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    margin-bottom: 1em;
+    height: fit-content;
+ }
+}
+
+.iconSmall{
+  width: 1.5em;
+  display: inline-block;
+  margin-bottom: -0.3em;
+}
+
+// Importerat för bildeffekt
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+
+.container{
+  padding: 1em 0;
+  float: left;
+  width: 40%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  @include mobile {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+     }
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 500px;
+  @include mobile {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+     }
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+.centerImages{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 1em;
+
+}
+.centerImages:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 3em;
+  @include mobile {
+    margin-bottom: 0em;
+     }
+}
+
+

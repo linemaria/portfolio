@@ -1,0 +1,85 @@
+
+table {
+    margin: auto auto;
+    text-align: left;
+    max-width: 1300px;
+    table-layout: fixed;
+    padding-bottom: 2em;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 1.4em;
+    @include mobile {
+       width: 90%;
+     }
+
+    td, th {
+        padding: 10px;
+        @include mobile {
+            padding: 5px;
+            font-size: 8px;
+          }
+       
+    }
+
+    th{
+font-weight: normal;
+font-size: smaller;
+text-transform: uppercase;
+@include mobile {
+    font-size: 8px;
+  }
+    }
+    td a{
+       color: white;
+
+    }
+    td a:visited{
+        color: white;
+     }
+
+    td{
+        border-bottom: 0.7px solid rgb(255, 255, 255);
+        a{
+            text-decoration: none;
+            border: none;
+            color: black;
+
+            &:hover{
+                text-decoration: underline;
+                color: #f34840;
+            }
+        }
+    }
+}
+
+#course_table{
+
+    @include mobile {
+        font-size: 0.5em;
+     }
+     td {
+        @include mobile {
+        
+
+         }
+    }
+
+}
+
+#work_table{
+
+    @include mobile {
+        font-size: 0.5em;
+     }
+     td {
+        @include mobile {
+     
+
+         }
+    }
+
+}
+
+.noBoard{
+    border: none;
+}

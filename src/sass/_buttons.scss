@@ -1,0 +1,138 @@
+// Styling för knappar
+// .btnOne {
+//     text-align: center;
+//     justify-content: center;
+//     background-color: white;
+//     border: none;
+//     padding: 10px 30px;
+//     letter-spacing: 1px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: block;
+//     font-size: 1em;
+//     width: fit-content;
+//     text-decoration: none;
+
+//     &:hover{
+//         background-color: $darkpink;
+//         color: $lightColor;
+//     }
+// }
+
+.fakeButton{
+    padding: 10px 20px;
+    border: 1.5px solid black;
+    border-radius: 26px;
+    margin-left: 4em;
+    margin-bottom: 2em;
+   
+    margin-top: 2em;
+        color: black;
+        text-decoration: none;
+        &:visited{
+            color: black
+    }
+    @include mobile {
+        margin-left: 1.5em;
+        font-size: small;
+        margin-top: 0em
+         }
+   
+}
+.fakeButton:hover{
+    background-color: black;
+    color: white
+}
+/* extend knapp ett men ändra färger */
+// .btnTwo {
+//     @extend .btnOne;
+//     background-color: $pink;
+//     color: white;
+
+//     &:hover{
+//         background-color: $lightpink;
+//         color: $darkColor;
+//     }
+//     }
+
+    // .btnBlue{
+    //     @extend .btnOne;
+    //     background-color: $blue;
+    //     color: white;
+    
+    //     &:hover{
+    //         background-color: white;
+    //         color: $darkColor;
+    //     }
+    // }
+
+    // .btnPurple{
+    //     @extend .btnOne;
+    //     background-color: $purple;
+    //     color: white;
+    
+    //     &:hover{
+    //         background-color: white;
+    //         color: $darkColor;
+    //     }
+    // }
+
+    // .btnGreen{
+    //     @extend .btnOne;
+    //     background-color: $green;
+    //     color: white;
+    
+    //     &:hover{
+    //         background-color: white;
+    //         color: $darkColor;
+    //     }
+    // }
+
+    // .tdButt{
+    //     background-color: $lightpink;
+    //     padding: 1em; 
+    //     border: none;
+    //     font-size: 0.8em;
+    //     border: none;
+
+    //     &:hover{
+    //         background-color: $pink;
+    //         color: white;
+    //     }
+    // }
+
+    // .tdButt2{
+    //     @extend .tdButt; 
+    //     background-color: $darkpink;
+    //     color: $lightColor;
+    
+    //     &:hover{
+    //         background-color: $lightpink;
+    //         color: $darkColor;
+    //     }
+    //     @include mobile {
+    //        margin-right: -1.5em;
+    //        font-size: smaller;
+    //      }
+    // }
+
+    //pil scrolla upp
+    #top {
+        position: fixed;
+        bottom: 1em;
+        right: 2em;
+        padding: 1em 1em 0 1em;
+        width: fit-content;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        @include mobile {
+            right: 1em;
+ 
+          }
+      }
+   
+      
+      #top img {
+        width:1.6em
+      }
